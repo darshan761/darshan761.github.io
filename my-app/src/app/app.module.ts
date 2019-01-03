@@ -4,6 +4,7 @@ import {FirebaseModule, FirebaseProvider} from 'angular-firebase';
 import { AngularFireModule } from '@angular/fire';
 import {environment} from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -25,7 +26,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     BrowserModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
-    FirebaseModule
+    FirebaseModule,
+    AngularFireDatabaseModule
   ],
   providers: [
     FirebaseProvider

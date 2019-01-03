@@ -1,9 +1,33 @@
 
 .card{
     width: 350px;
-    height: 200px;
+    height: 360px;
     text-align: center;
     background-color:white;
     padding: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-img-top {
+    height: 100px;
+    width: 120px;
+    align-content: center;
+}
+
+.card-body {
+    text-align: left;
+}
+
+.btn .btn-primary {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+}
+
+.jumbotron {
+    height:140px;
+    position: relative;
+}
+
+.h1 {
+    position: relative;
+    top:50px;
 }

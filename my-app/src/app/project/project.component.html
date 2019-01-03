@@ -3,14 +3,20 @@
   <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
   <hr class="my-4">
 </div>-->
-
-<div  class="col-sm-4">
+<div class="container">
+    <div class="jumbotron">
+      <h1>Projects</h1>      
+    </div>     
+<div  *ngFor="let p of items | async" class="col-sm-4">
   <div class="card" >
-    <img class="card-img-top" src="---" alt="Project">
+    <br>
+    <img class="card-img-top" src="{{p.Img}}" alt="Project">
     <div class="card-body">
-      <h5 class="card-title"><b>Title</b></h5>
-      <p class="card-text">Description</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+        <br>
+      <h5 class="card-title"><b>{{p.Title }}</b></h5>
+      <p class="card-text">{{p.Description}}</p>
+      <a href="{{p.Link}}" class="btn btn-primary">GITHUB</a>
     </div>
   </div>
+</div>
 </div>

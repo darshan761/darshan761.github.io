@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Project} from'../models/Project';
+import { AngularFirestore } from '@angular/fire/firestore'
+import { AngularFireDatabase } from '@angular/fire/database';
 import { Observable } from 'rxjs';
 
 
@@ -10,10 +12,11 @@ import { Observable } from 'rxjs';
   styleUrls: ['./project.component.css']
 })
 export class ProjectComponent implements OnInit {
-    
-  constructor() {
-        
-   }
+  items: Observable<any[]>;
+  constructor(db: AngularFireDatabase) {
+    this.items = db.list('Projects').valueChanges();
+    //console.log(this.items);
+  }
 
   ngOnInit() {
     
