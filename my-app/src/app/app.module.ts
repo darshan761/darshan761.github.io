@@ -12,6 +12,7 @@ import { WorkComponent } from './work/work.component';
 import { ProjectComponent } from './project/project.component';
 import { BlogComponent } from './blog/blog.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { BlogDetailComponent } from './blog-detail/blog-detail.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     WorkComponent,
     ProjectComponent,
     BlogComponent,
-    NavbarComponent
+    NavbarComponent,
+    BlogDetailComponent
   ],
   imports: [
     BrowserModule,

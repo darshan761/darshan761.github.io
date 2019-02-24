@@ -1,22 +1,16 @@
-<!----<div class="jumbotron" style="text-align: center" >
-  <h1 class="display-1" >Projects!</h1>
-  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-  <hr class="my-4">
-</div>-->
+
 <div class="container">
-    <div class="jumbotron">
-      <h1>Projects</h1>      
-    </div>     
-<div  *ngFor="let p of items | async" class="col-sm-4">
-  <div class="card" >
-    <br>
-    <img class="card-img-top" src="{{p.Img}}" alt="Project">
-    <div class="card-body">
-        <br>
-      <h5 class="card-title"><b>{{p.Title }}</b></h5>
-      <p class="card-text">{{p.Description}}</p>
-      <a href="{{p.Link}}" class="btn btn-primary">GITHUB</a>
-    </div>
-  </div>
-</div>
-</div>
+    <div *ngFor="let p of items | async" class="col-sm-6 card">
+     <div class="card-header" style="text-align: center">
+       <strong style="font-size: 28px;font-family: Arial, Helvetica, sans-serif">{{p.Title}}</strong>
+     </div>
+     <div class="card-body">
+       <img class="center" src="{{p.Img}}"><br/>
+       <p style="font-size:18px ;text-align: center" class="card-title">{{p.Description}}</p>
+       <div class="wrap">
+           <a target="_blank" href="{{p.Link}}" style="text-decoration: none" class="button"><strong style="font-size: 20px">VIEW</strong></a>
+       </div>
+     </div>
+   </div>
+   </div>
+   
