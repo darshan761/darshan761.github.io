@@ -1,0 +1,15 @@
+<div *ngFor="let p of blog | async"  class="container">
+    <div  class="col-md-6">
+        
+        <img class="center" src="{{p.Img}}"><hr>
+        <img class="center" src="{{p.Img2}}">
+        </div>
+        <div class="col-md-6">
+          <h1 style="font-size: 32px"><strong>{{p.Title}}</strong></h1>
+          <span style="font-size: 12px" class="badge">Posted {{p.Date}} </span><div class="pull-right">
+          </div>         
+        <p style="text-align: justify;font-size: 24px">{{p.Description}}</p>
+        <div>
+           
+         </div>
+         </div>
