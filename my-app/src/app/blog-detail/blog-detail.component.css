@@ -1,5 +1,15 @@
+.container {
+    margin-bottom: 15px;
+}
 img {
-    width:460px;
-    height:400px;
+    width:500px;
+    height:500px;
     align-content: center;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+     img{
+         width:100%;
+     }
 }

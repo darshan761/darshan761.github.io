@@ -1,1 +1,13 @@
 
+<div class="container">
+<div *ngFor="let p of items | async" class="col-sm-6 card">
+ <div class="card-header" style="text-align: center">
+   <strong style="font-size: 28px;font-family: Arial, Helvetica, sans-serif">{{p.Company}}</strong><hr>
+   <span style="font-size: 17px;font-family: Arial, Helvetica, sans-serif;font-style: italic" class="center">{{p.Position}}  <span class="dot"></span>  {{p.Duration}}</span>
+ </div>
+ <div class="card-body">
+  <a href={{p.Link}} target="_blank"><img class="center" src="{{p.Img}}"></a><br/>
+   <p style="font-size:18px ;text-align: center" class="card-title">{{p.Description}}</p>
+ </div>
+</div>
+</div>

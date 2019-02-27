@@ -1,6 +1,7 @@
 
-<div class="card">
-  <img src="assets/img/spidy2.jpg" alt="Darshan" style="width:100%">
+<div *ngFor="let p of items | async" class="card">
+  
+      <img class="img-circle center" src="{{p.Pic}}" alt="Darshan" ><hr>
   <h1>Darshan Patil</h1>
   <p class="title">Friendly Neighborhood Developer!</p>
   <p style="font-size: 18px;text-align: center;padding: 2px;">Hii....I am a Third Year Computer engineering Student from Sardar Patel Institute of Technology, Mumbai. I Love Coding with passion for technology and always ready to learn something new!!</p>
